@@ -1,6 +1,10 @@
-FROM node:22-alpine
+FROM alpine:latest
 
 WORKDIR /app
+
+RUN apk update && apk upgrade \
+    && apk add --no-cache nodejs npm \
+    && rm -rf /var/cache/apk/*
 
 RUN npm install -g http-server
 
