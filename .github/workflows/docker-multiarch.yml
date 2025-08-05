@@ -16,7 +16,7 @@ jobs:
 
       - name: Nur html aus fremdem Repo holen (Sparse Checkout)
         run: |
-          git clone --filter=blob:none --no-checkout https://github.com/OpenIRL/sls-management-ui.git temp_html
+          git clone --filter=blob:none --no-checkout --branch 1.0.0 --single-branch https://github.com/OpenIRL/sls-management-ui.git temp_html
           cd temp_html
           git sparse-checkout init --cone
           git sparse-checkout set html
