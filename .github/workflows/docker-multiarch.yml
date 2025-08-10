@@ -16,7 +16,7 @@ jobs:
           cd sls-management-ui/
           git sparse-checkout init --cone
           git sparse-checkout set html
-          git checkout 1.0.0
+          git checkout
           mv html/ ../html
           cd ..
           rm -rf sls-management-ui/
