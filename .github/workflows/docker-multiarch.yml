@@ -16,7 +16,6 @@ jobs:
           cd temp_html
           git sparse-checkout init --cone
           git sparse-checkout set html
-          git checkout main
           mv html ../html
           cd ..
           rm -rf temp_html
