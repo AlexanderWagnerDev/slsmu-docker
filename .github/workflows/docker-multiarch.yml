@@ -70,9 +70,6 @@ jobs:
           push: true
           tags: |
             alexanderwagnerdev/slsmu:latest
-            alexanderwagnerdev/slsmu:v0.0.2
+            alexanderwagnerdev/slsmu:v0.0.3
             ghcr.io/alexanderwagnerdev/slsmu:latest
-            ghcr.io/alexanderwagnerdev/slsmu:v0.0.2
-            
-      - uses: eviden-actions/clean-self-hosted-runner@v1
-        if: ${{ always() }}
+            ghcr.io/alexanderwagnerdev/slsmu:v0.0.3
