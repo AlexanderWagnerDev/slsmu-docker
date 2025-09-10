@@ -70,6 +70,6 @@ jobs:
           push: true
           tags: |
             alexanderwagnerdev/slsmu:latest
-            alexanderwagnerdev/slsmu:v0.0.3
+            alexanderwagnerdev/slsmu:v0.0.4
             ghcr.io/alexanderwagnerdev/slsmu:latest
-            ghcr.io/alexanderwagnerdev/slsmu:v0.0.3
+            ghcr.io/alexanderwagnerdev/slsmu:v0.0.4
