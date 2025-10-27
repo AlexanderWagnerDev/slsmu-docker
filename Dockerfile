@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alexanderwagnerdev/alpine:autoupdate-stable
 
 WORKDIR /app
 
@@ -14,4 +14,7 @@ COPY html/run.js /run.js
 
 EXPOSE 3000
 
-CMD ["node", "/run.js"]
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+CMD ["/entrypoint.sh"]
