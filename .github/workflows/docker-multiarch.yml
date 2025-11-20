@@ -11,7 +11,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout eigenes Repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Nur html aus fremdem Repo holen (Sparse Checkout)
         run: |
